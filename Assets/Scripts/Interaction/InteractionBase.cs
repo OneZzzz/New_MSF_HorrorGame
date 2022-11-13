@@ -12,7 +12,7 @@ public class InteractionBase : MonoBehaviour
 
     public virtual void OnPlayerInteraction(PlayerController player)
     {
-        
+        this.player = player;
     }
     
 }

@@ -12,4 +12,15 @@ public class GameSave : MonoBehaviour
     }
     [HideInInspector]
     public LightState currentLightState;
+
+
+
+
+    public Dictionary<string, bool> switchState = new Dictionary<string, bool>();
+
+    public bool openDoor;
+
+
+
+
 }
