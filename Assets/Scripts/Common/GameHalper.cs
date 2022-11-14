@@ -194,4 +194,8 @@ public class GameHalper : MonoBehaviour
         SceneManager.LoadScene(name);
         CursorManager.instance.Renew();
     }
+    public static string GetSceneName()
+    {
+        return SceneManager.GetActiveScene().name;
+    }
 }

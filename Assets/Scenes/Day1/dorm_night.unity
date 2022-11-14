@@ -604,6 +604,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isDay: 0
   player: {fileID: 1681917214}
+  animation: {fileID: 318078815}
 --- !u!114 &473594349
 MonoBehaviour:
   m_ObjectHideFlags: 0

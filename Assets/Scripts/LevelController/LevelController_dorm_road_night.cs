@@ -16,6 +16,14 @@ public class LevelController_dorm_road_night : LevelController
 
     void ShowTips()
     {
-        interaction_scene.OnPlayerInteraction(playerController);
+        if (!GameSave.instance.level.ContainsKey(GameHalper.GetSceneName()))
+        {
+            GameSave.instance.level.Add(GameHalper.GetSceneName(), true);
+            interaction_scene.OnPlayerInteraction(playerController);
+        }
+        else
+        {
+            playerController.enabled = true;
+        }
     }
 }
