@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Choose_Books : InteractionChooseBase
 {
+    public GameObject door;
 
     private InteractionBase interaction;
     public ItemData data;
@@ -21,6 +22,8 @@ public class Choose_Books : InteractionChooseBase
         InventorySystem.instance.Add(data);
         StateUIManager.instance.SetState("diarypage", true);
         interaction.OnPlayerInteraction(player);
+        door.transform.GetChild(0).gameObject.SetActive(false);
+        door.transform.GetChild(1).gameObject.SetActive(true);
     }
     public override void Option2()
     {

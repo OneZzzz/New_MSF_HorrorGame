@@ -10,16 +10,16 @@ public class StateUIManager : MonoBehaviour
         if (instance == null)
             instance = this;
     }
-    private List<GameObject> states=new List<GameObject>();
+    private List<GameObject> states = new List<GameObject>();
     private void Start()
     {
         for (int i = 0; i < transform.childCount; i++)
         {
-            states.Add( transform.GetChild(i).gameObject);
+            states.Add(transform.GetChild(i).gameObject);
             transform.GetChild(i).gameObject.SetActive(false);
         }
     }
-    public void SetState(string name,bool state)
+    public void SetState(string name, bool state)
     {
         CheckStateState(name).SetActive(state);
     }

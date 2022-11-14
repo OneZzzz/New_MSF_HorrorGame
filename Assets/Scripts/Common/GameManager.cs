@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
         cursorEllipsis = Resources.Load<Texture2D>("ellipsis");
         cursorFind = Resources.Load<Texture2D>("find");
         dayLight = GameHalper.GetChildGameObjectByName(transform, "dayLight", false);
-        if(dayLight==null)
+        if (dayLight == null)
             dayLight = GameHalper.GetChildGameObjectByName(transform, "DayLight", false);
     }
 
