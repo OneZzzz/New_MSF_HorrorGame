@@ -879,7 +879,7 @@ MonoBehaviour:
   player: {fileID: 0}
   cursorType: 0
   messages:
-  - name: MC
+  - name: Bai
     message: "So quiet and empty. The lights are off. I can hear the drip of water
       \rfrom the bathroom and toilet at the end of the corridor\u2026 and even someone
       \rbreathing?"
@@ -2512,10 +2512,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 191546919, guid: 9def4e2281453244f874e3f669b9e1cf, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8526585483904899608, guid: 9def4e2281453244f874e3f669b9e1cf, type: 3}
       propertyPath: m_RootOrder
       value: 1

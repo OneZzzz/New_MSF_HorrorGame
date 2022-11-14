@@ -14,6 +14,8 @@ public class DistributionItemButton : MonoBehaviour,IPointerEnterHandler,IPointe
             index -= 4;
         SetPos();
         boxController.CheckResult();
+        if (boxController.GetResult())
+            AudioManager.instance.PlayAudio("Power_Operate");
     }
 
     public void OnPointerEnter(PointerEventData eventData)

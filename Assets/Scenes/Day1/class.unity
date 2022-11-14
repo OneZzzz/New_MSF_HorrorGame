@@ -152,7 +152,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1354492719194743240, guid: 863e183b9a98068408519141505e8fc9, type: 3}
       propertyPath: messages.Array.data[0].name
-      value: MC
+      value: Bai
       objectReference: {fileID: 0}
     - target: {fileID: 1354492719194743240, guid: 863e183b9a98068408519141505e8fc9, type: 3}
       propertyPath: messages.Array.data[1].name
@@ -160,7 +160,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1354492719194743240, guid: 863e183b9a98068408519141505e8fc9, type: 3}
       propertyPath: messages.Array.data[2].name
-      value: MC
+      value: Bai
       objectReference: {fileID: 0}
     - target: {fileID: 1354492719194743240, guid: 863e183b9a98068408519141505e8fc9, type: 3}
       propertyPath: messages.Array.data[3].name
@@ -172,7 +172,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1354492719194743240, guid: 863e183b9a98068408519141505e8fc9, type: 3}
       propertyPath: messages.Array.data[5].name
-      value: MC
+      value: Bai
       objectReference: {fileID: 0}
     - target: {fileID: 1354492719194743240, guid: 863e183b9a98068408519141505e8fc9, type: 3}
       propertyPath: messages.Array.data[0].message
@@ -519,8 +519,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 47251626}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -16.1, y: -5.05, z: -9}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -15.53, y: -4.05, z: -9}
+  m_LocalScale: {x: 1.0801, y: 1.0801, z: 1.0801}
   m_Children: []
   m_Father: {fileID: 1568518220}
   m_RootOrder: 2
@@ -565,7 +565,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 11
   m_Sprite: {fileID: -1845110787717514938, guid: d40aa5d8fdcb29a488cfd7ba8cc99b27, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -624,7 +624,7 @@ MonoBehaviour:
   player: {fileID: 0}
   cursorType: 0
   messages:
-  - name: MC
+  - name: Bai
     message: "The teacher is not here yet, still get some time to spend before \rclass."
     isClose_up: 0
     close_upSprite: {fileID: 0}
@@ -689,17 +689,17 @@ MonoBehaviour:
   player: {fileID: 0}
   cursorType: 0
   messages:
-  - name: MC
+  - name: Bai
     message: ...What was that about?
     isClose_up: 0
     close_upSprite: {fileID: 0}
     nameColor: {r: 1, g: 0.5, b: 0, a: 1}
-  - name: MC
+  - name: Bai
     message: Whatever, it's probably nothing...
     isClose_up: 0
     close_upSprite: {fileID: 0}
     nameColor: {r: 1, g: 0.5, b: 0, a: 1}
-  - name: MC
+  - name: Bai
     message: "Maybe I should get to know the others better. It\u2019s the first day
       of school after \rall...I wouldn't want to be left out."
     isClose_up: 0
@@ -822,7 +822,7 @@ MonoBehaviour:
   player: {fileID: 0}
   cursorType: 0
   messages:
-  - name: MC
+  - name: Bai
     message: "My desk. It's empty\u2026for now."
     isClose_up: 0
     close_upSprite: {fileID: 0}
@@ -938,12 +938,12 @@ MonoBehaviour:
     isClose_up: 1
     close_upSprite: {fileID: -2385790202213352369, guid: 8e95a3185352d2d49ab87889ca9290cb, type: 3}
     nameColor: {r: 1, g: 0, b: 0, a: 1}
-  - name: MC
+  - name: Bai
     message: "Xinxiang. Didn\u2019t expect to be assigned here."
     isClose_up: 1
     close_upSprite: {fileID: -2385790202213352369, guid: 8e95a3185352d2d49ab87889ca9290cb, type: 3}
     nameColor: {r: 1, g: 0.5, b: 0, a: 1}
-  - name: MC
+  - name: Bai
     message: "It\u2019s so isolated, though the facilities are complete."
     isClose_up: 1
     close_upSprite: {fileID: -2385790202213352369, guid: 8e95a3185352d2d49ab87889ca9290cb, type: 3}
@@ -1008,12 +1008,12 @@ MonoBehaviour:
     isClose_up: 1
     close_upSprite: {fileID: 3112025689754446127, guid: 261059c48c62e1e488596fa67e545c24, type: 3}
     nameColor: {r: 1, g: 0, b: 0, a: 1}
-  - name: MC
+  - name: Bai
     message: "Why are there wild animals? That\u2019s so crazy. Hope I will never
       see \rthem."
     isClose_up: 1
     close_upSprite: {fileID: 3112025689754446127, guid: 261059c48c62e1e488596fa67e545c24, type: 3}
-    nameColor: {r: 1, g: 0, b: 0, a: 1}
+    nameColor: {r: 1, g: 0.5, b: 0, a: 1}
   index: 0
   interactionItem_Poster: {fileID: 718016317}
 --- !u!61 &1155902356
@@ -1237,7 +1237,7 @@ MonoBehaviour:
   player: {fileID: 0}
   cursorType: 0
   messages:
-  - name: MC
+  - name: Bai
     message: It's not time to head out yet.
     isClose_up: 0
     close_upSprite: {fileID: 0}
@@ -1336,7 +1336,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 6
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -1534,7 +1534,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 11
   m_Sprite: {fileID: 5899629648459236453, guid: d40aa5d8fdcb29a488cfd7ba8cc99b27, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1775,7 +1775,7 @@ MonoBehaviour:
       you?
     isClose_up: 0
     close_upSprite: {fileID: 0}
-    nameColor: {r: 0, g: 1, b: 0, a: 1}
+    nameColor: {r: 0, g: 0.7, b: 0, a: 1}
   - name: MC
     message: "Well, we are classmates now, so I think we should know each other at
       least. \rYou can relax a little bit."
@@ -1786,7 +1786,7 @@ MonoBehaviour:
     message: Well, ok. (Lowered her head)
     isClose_up: 0
     close_upSprite: {fileID: 0}
-    nameColor: {r: 0, g: 1, b: 0, a: 1}
+    nameColor: {r: 0, g: 0.7, b: 0, a: 1}
   - name: MC
     message: ' ... ...'
     isClose_up: 0
@@ -1871,12 +1871,12 @@ MonoBehaviour:
   player: {fileID: 0}
   cursorType: 0
   messages:
-  - name: MC
+  - name: Bai
     message: There are a lot of students outside.
     isClose_up: 0
     close_upSprite: {fileID: 0}
     nameColor: {r: 1, g: 0.5019608, b: 0, a: 1}
-  - name: MC
+  - name: Bai
     message: First day at school, no wonder.
     isClose_up: 0
     close_upSprite: {fileID: 0}
@@ -2036,8 +2036,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1987149811}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.53, y: -4.56, z: -9}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 12.21, y: -4.28, z: -9}
+  m_LocalScale: {x: 1.0824322, y: 1.0824322, z: 1.0824322}
   m_Children: []
   m_Father: {fileID: 1568518220}
   m_RootOrder: 3
@@ -2082,7 +2082,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 11
   m_Sprite: {fileID: -1845110787717514938, guid: d40aa5d8fdcb29a488cfd7ba8cc99b27, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2141,7 +2141,7 @@ MonoBehaviour:
   player: {fileID: 0}
   cursorType: 0
   messages:
-  - name: MC
+  - name: Bai
     message: There's nothing here but dust.
     isClose_up: 0
     close_upSprite: {fileID: 0}
@@ -2279,7 +2279,7 @@ MonoBehaviour:
     isClose_up: 0
     close_upSprite: {fileID: 0}
     nameColor: {r: 0.68235296, g: 0.68235296, b: 0.68235296, a: 1}
-  - name: MC
+  - name: Bai
     message: Hi.
     isClose_up: 0
     close_upSprite: {fileID: 0}
@@ -2302,7 +2302,7 @@ MonoBehaviour:
     isClose_up: 0
     close_upSprite: {fileID: 0}
     nameColor: {r: 0.68235296, g: 0.68235296, b: 0.68235296, a: 1}
-  - name: MC
+  - name: Bai
     message: " (Look around) Really? I don\u2019t think it\u2019s that terrible\u2026"
     isClose_up: 0
     close_upSprite: {fileID: 0}
@@ -2317,7 +2317,7 @@ MonoBehaviour:
     isClose_up: 0
     close_upSprite: {fileID: 0}
     nameColor: {r: 0.68235296, g: 0.68235296, b: 0.68235296, a: 1}
-  - name: MC
+  - name: Bai
     message: (Why is everybody so weird?)
     isClose_up: 0
     close_upSprite: {fileID: 0}

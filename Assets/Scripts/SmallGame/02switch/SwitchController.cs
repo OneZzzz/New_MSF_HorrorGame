@@ -95,7 +95,7 @@ public class SwitchController : MonoBehaviour
             SetObject(lights, "dorm", dorm);
         }
     }
-    private bool GetNumber()
+    public bool GetNumber()
     {
         int number = 0;
         if (gate) number += 97;

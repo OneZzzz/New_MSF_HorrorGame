@@ -10,6 +10,8 @@ public class SwitchItemButton : MonoBehaviour,IPointerClickHandler
     {
         AudioManager.instance.PlayAudio("Switch");
         switchController.SetSwitch(gameObject.name);
+        if (switchController.GetNumber())
+            AudioManager.instance.PlayAudio("Power_Operate");
     }
     private  SwitchController switchController;
     public void SetSwitch(SwitchController sw)

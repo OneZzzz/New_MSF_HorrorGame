@@ -10896,6 +10896,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf288719c84b15040bc29f2237790127, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isDay: 0
 --- !u!4 &1152291081
 Transform:
   m_ObjectHideFlags: 0
@@ -10923,6 +10924,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32dc9c30b6a9b094993594b2f8e19abf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  cursorType: 0
   messages:
   - name: Hua
     message: Where I'm from, we don't usually shower together like this...
@@ -10939,7 +10942,7 @@ MonoBehaviour:
     isClose_up: 0
     close_upSprite: {fileID: 0}
     nameColor: {r: 0, g: 0, b: 0, a: 1}
-  - name: MC
+  - name: Bai
     message: ...So, what about you? Where are you from?
     isClose_up: 0
     close_upSprite: {fileID: 0}
@@ -10948,7 +10951,7 @@ MonoBehaviour:
     message: Oh...me? I'm from XXX Village. The one next to the school actually
     isClose_up: 0
     close_upSprite: {fileID: 0}
-    nameColor: {r: 0.161098, g: 1, b: 0, a: 1}
+    nameColor: {r: 0.11254913, g: 0.7, b: 0, a: 1}
   - name: Lin
     message: "No way! XXX Village? I thought they never had a chance to pursue high
       \r\neducation."
@@ -10959,7 +10962,7 @@ MonoBehaviour:
     message: "Uh...well, I\u2019m the first from my village to attend a university"
     isClose_up: 0
     close_upSprite: {fileID: 0}
-    nameColor: {r: 0.16078432, g: 1, b: 0, a: 1}
+    nameColor: {r: 0.1137255, g: 0.7019608, b: 0, a: 1}
   - name: Hua
     message: "You are local? (Looked at her up) I can\u2019t believe it. You must've
       worked really \r\nhard to get into the university."
@@ -10970,7 +10973,7 @@ MonoBehaviour:
     message: Haha yeah...
     isClose_up: 0
     close_upSprite: {fileID: 0}
-    nameColor: {r: 0.16078432, g: 1, b: 0, a: 1}
+    nameColor: {r: 0.1137255, g: 0.7019608, b: 0, a: 1}
   - name: Lin
     message: "So, you know the community well, don\u2019t you? Tell us some fun stuff."
     isClose_up: 0
@@ -10987,20 +10990,20 @@ MonoBehaviour:
     message: Well, I dreamed of living in a big city one day, so I worked hard.
     isClose_up: 0
     close_upSprite: {fileID: 0}
-    nameColor: {r: 0.025951147, g: 1, b: 0, a: 1}
+    nameColor: {r: 0.1137255, g: 0.7019608, b: 0, a: 1}
   - name: Yan
     message: "For the customs? All I know is \u201CMountain Yell\u201D, the temple
       in the village, and \r\nthe festivals."
     isClose_up: 0
     close_upSprite: {fileID: 0}
-    nameColor: {r: 0.025951147, g: 1, b: 0, a: 1}
+    nameColor: {r: 0.1137255, g: 0.7019608, b: 0, a: 1}
   - name: Yan
     message: "Then for the local villagers? They are just modest farmers, I think.
       Every family \r\nhas their own land. Sorry, I can\u2019t explain it clearly."
     isClose_up: 0
     close_upSprite: {fileID: 0}
-    nameColor: {r: 0.025951147, g: 1, b: 0, a: 1}
-  - name: MC
+    nameColor: {r: 0.1137255, g: 0.7019608, b: 0, a: 1}
+  - name: Bai
     message: "Let\u2019s stop asking her too many questions. Why not talk about ourselves?"
     isClose_up: 0
     close_upSprite: {fileID: 0}
@@ -11023,7 +11026,7 @@ MonoBehaviour:
     isClose_up: 0
     close_upSprite: {fileID: 0}
     nameColor: {r: 0, g: 0, b: 0, a: 1}
-  - name: MC
+  - name: Bai
     message: "\u2026 You alright?"
     isClose_up: 0
     close_upSprite: {fileID: 0}
@@ -11032,16 +11035,14 @@ MonoBehaviour:
     message: "...Yeah I\u2019m fine"
     isClose_up: 0
     close_upSprite: {fileID: 0}
-    nameColor: {r: 0.025951147, g: 1, b: 0, a: 1}
-  - name: MC
+    nameColor: {r: 0.1137255, g: 0.7019608, b: 0, a: 1}
+  - name: Bai
     message: "Well, we must hurry. The water is running cold. Let\u2019s go back
       to the dorm. I\u2019ll \r\nwait you outside of the bathroom"
     isClose_up: 0
     close_upSprite: {fileID: 0}
     nameColor: {r: 1, g: 0.5, b: 0, a: 1}
   index: 0
-  player: {fileID: 0}
-  cursorType: 0
   ellipsis:
   - {fileID: 1377536175}
   - {fileID: 649454561}
