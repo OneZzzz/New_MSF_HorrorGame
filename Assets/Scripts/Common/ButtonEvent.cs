@@ -8,4 +8,12 @@ public class ButtonEvent : MonoBehaviour
     {
         GameHalper.instance.ChangeScene(name);
     }
+    public void SetTrigger(string name)
+    {
+        GetComponent<Animator>().SetTrigger(name);
+    }
+    public void ChangeScene()
+    {
+        GameHalper.instance.ChangeScene("class");
+    }
 }

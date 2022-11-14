@@ -276,6 +276,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 191546919, guid: 9def4e2281453244f874e3f669b9e1cf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8526585483904899608, guid: 9def4e2281453244f874e3f669b9e1cf, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -602,7 +606,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ce17974bab50bc4093ec6659577577f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDay: 1
+  isDay: 0
   player: {fileID: 1681917214}
   animation: {fileID: 318078815}
 --- !u!114 &473594349
@@ -1339,7 +1343,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 20d11515a13d11a4cb36a5ab92f53643, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
