@@ -21,6 +21,6 @@ public class GameSave : MonoBehaviour
     public bool openDoor;
 
     public Dictionary<string, bool> level = new Dictionary<string, bool>();
-
+    public Dictionary<string, bool> items = new Dictionary<string, bool>();
 
 }

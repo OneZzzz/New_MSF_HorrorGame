@@ -10,6 +10,8 @@ public class Choose_Drawer : InteractionChooseBase
     private void Start()
     {
         interaction = transform.GetChild(0).GetComponent<InteractionBase>();
+        if (StateUIManager.instance.GetState("matchstick"))
+            gameObject.SetActive(false);
     }
 
 

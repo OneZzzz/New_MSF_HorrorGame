@@ -11,13 +11,18 @@ public class GameManager : MonoBehaviour
     }
     private GameObject dayLight;
 
+    private void Start()
+    {
+        
+    }
+
     private void Awake()
     {
         if (instance != null && instance != this)
         {
             Destroy(gameObject);
         }
-        else if (instance == null)
+        else 
         {
             DontDestroyOnLoad(this);
             instance = this;

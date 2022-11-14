@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class InteractionNpc_xiaolv : InteractionNpcBase
 {
+    public string NextSceneName = "bathroom";
     public override void End()
     {
         InteractionUIManager.instance.CloseMessage();
@@ -12,6 +13,6 @@ public class InteractionNpc_xiaolv : InteractionNpcBase
     }
     private void EnterNextScene()
     {
-        GameHalper.instance.ChangeScene("bathroom");
+        GameHalper.instance.ChangeScene(NextSceneName);
     }
 }

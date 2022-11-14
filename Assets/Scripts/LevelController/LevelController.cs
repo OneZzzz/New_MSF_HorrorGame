@@ -7,6 +7,9 @@ public class LevelController : MonoBehaviour
     public bool isDay = true;
     private void OnEnable()
     {
-        GameManager.instance.SetTime(isDay);
+        if (GameManager.instance != null)
+            GameManager.instance.SetTime(isDay);
+        else
+            GameObject.FindObjectOfType<GameManager>().SetTime(isDay);
     }
 }

@@ -98,7 +98,8 @@ public class PlayerController : MonoBehaviour
                 state = MovementState.idle;
                 _audioSources.Stop();
                 _velocity = Vector2.zero;
-                GameManager.instance.GetInteractionTarget().OnPlayerInteraction(this); 
+                GameManager.instance.GetInteractionTarget().OnPlayerInteraction(this);
+                GameHalper.instance.Wait(0.05f, () => _anim.SetInteger("state", 0));
             }
         }
         
@@ -213,7 +214,7 @@ public class PlayerController : MonoBehaviour
     {
         
     }
-   void ChangeState()
+    void ChangeState()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
