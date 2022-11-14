@@ -208,6 +208,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 19.25, y: 1.36, z: -0.04052556}
   m_LocalScale: {x: 1, y: 7.6118, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2020857168}
   m_RootOrder: 2
@@ -261,7 +262,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!61 &744584668
@@ -383,7 +384,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &828211869
@@ -396,6 +397,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 2.417224, y: -2.2203128, z: -0.04052556}
   m_LocalScale: {x: 33.844032, y: 0.6007708, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2020857168}
   m_RootOrder: 0
@@ -413,7 +415,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 651572255658535688, guid: 9c6aeb3ef14d949418a6a45c29cf6b43, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.4
+      value: 11.36
       objectReference: {fileID: 0}
     - target: {fileID: 651572255658535688, guid: 9c6aeb3ef14d949418a6a45c29cf6b43, type: 3}
       propertyPath: m_LocalPosition.y
@@ -459,6 +461,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3735526236639580361, guid: 9c6aeb3ef14d949418a6a45c29cf6b43, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c6aeb3ef14d949418a6a45c29cf6b43, type: 3}
 --- !u!1 &1044690586
@@ -490,6 +496,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.25, y: -0.72, z: 0}
   m_LocalScale: {x: 0.4668, y: 0.4668, z: 0.4668}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -705,6 +712,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.785, y: -0.72, z: 0}
   m_LocalScale: {x: 0.4668, y: 0.4668, z: 0.4668}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
@@ -737,6 +745,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -14.61, y: 1.36, z: -0.04052556}
   m_LocalScale: {x: 1, y: 7.6118, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2020857168}
   m_RootOrder: 1
@@ -790,7 +799,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!61 &1366450438
@@ -846,6 +855,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.939107, y: -0.3984759, z: 0.038853593}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -888,6 +898,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.899476, y: -2.689387, z: 0.04052556}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 828211869}
   - {fileID: 1366450436}
@@ -1015,6 +1026,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.749, y: -0.72, z: 0}
   m_LocalScale: {x: 0.4668, y: 0.4668, z: 0.4668}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -1036,7 +1048,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6313856439241645394, guid: 8510f52b3cd65da479b2f0adbae3db93, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.9
+      value: -0.83
       objectReference: {fileID: 0}
     - target: {fileID: 6313856439241645394, guid: 8510f52b3cd65da479b2f0adbae3db93, type: 3}
       propertyPath: m_LocalPosition.y

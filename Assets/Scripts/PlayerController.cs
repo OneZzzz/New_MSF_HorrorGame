@@ -1,8 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-public enum MovementState { idle, walk, run, crouch, crawl }
-public enum LightState { day,night,light}
+public enum MovementState { idle, walk, run, crouch, crawl, die }
+public enum LightState { day, night, light }
 public class PlayerController : MonoBehaviour
 {
     private Rigidbody2D _rb;
@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour
     private LightState lightState;
     public LightState GetLightState
     {
-        get 
+        get
         {
             return lightState;
         }
@@ -45,6 +45,7 @@ public class PlayerController : MonoBehaviour
 
 
     private bool disableInput = false;
+    private bool dead = false;
 
     private void Awake()
     {
@@ -71,20 +72,31 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        if (!disableInput)
+        if (dead)
         {
-            CheckPlayerInput();
-        }
-        else
-        {
-            state = MovementState.idle;
+            // Debug.Log("died");
+            state = MovementState.die;
             _audioSources.Stop();
             _velocity = Vector2.zero;
         }
-        StateMachine();
+        else
+        {
+            if (!disableInput)
+            {
+                CheckPlayerInput();
+            }
+            else
+            {
+                state = MovementState.idle;
+                _audioSources.Stop();
+                _velocity = Vector2.zero;
+            }
+            StateMachine();
+            CheckInteraction();
+            ChangeState();
+        }
+
         UpdateAnimationState();
-        CheckInteraction();
-        ChangeState();
     }
     private void CheckInteraction()
     {
@@ -92,8 +104,8 @@ public class PlayerController : MonoBehaviour
         {
             if (GameManager.instance.GetInteractionTarget() == null) return;
             float x = Mathf.Abs(GameManager.instance.GetInteractionTarget().transform.position.x - transform.position.x);
-            float mutiX=(Camera.main.ScreenToWorldPoint(Input.mousePosition).x- transform.position.x);
-            if ((x < 3 &&!InteractionUIManager.instance.GetInteractionState() )||  (mutiX<3 && !InteractionUIManager.instance.GetInteractionState()))
+            float mutiX = (Camera.main.ScreenToWorldPoint(Input.mousePosition).x - transform.position.x);
+            if ((x < 3 && !InteractionUIManager.instance.GetInteractionState()) || (mutiX < 3 && !InteractionUIManager.instance.GetInteractionState()))
             {
                 state = MovementState.idle;
                 _audioSources.Stop();
@@ -102,7 +114,7 @@ public class PlayerController : MonoBehaviour
                 GameHalper.instance.Wait(0.05f, () => _anim.SetInteger("state", 0));
             }
         }
-        
+
     }
 
     private void CheckPlayerInput()
@@ -149,6 +161,10 @@ public class PlayerController : MonoBehaviour
     {
         switch (state)
         {
+            case MovementState.die:
+                // _rb.velocity = new Vector2(dirX * crouchSpeed, _rb.velocity.y);
+                _velocity = new Vector2(0, 0);
+                break;
             case MovementState.idle:
                 // _rb.velocity = new Vector2(0, _rb.velocity.y);
                 _velocity = new Vector2(0, _rb.velocity.y);
@@ -207,12 +223,12 @@ public class PlayerController : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        
+
     }
     void ChangeState()
     {
@@ -238,6 +254,11 @@ public class PlayerController : MonoBehaviour
         }
 
     }
+    public void DieState()
+    {
+        dead = true;
+        state = MovementState.die;
+    }
     void StateAI()
     {
         if (lightState == LightState.day)
@@ -247,7 +268,7 @@ public class PlayerController : MonoBehaviour
                 lightState = LightState.night;
             }
         }
-        else if(lightState== LightState.night)
+        else if (lightState == LightState.night)
         {
             if (StateUIManager.instance.GetState("matchstick"))
             {
@@ -262,7 +283,13 @@ public class PlayerController : MonoBehaviour
         {
             lightState = LightState.day;
         }
-        
+
     }
 
+
+    public void FinishDeath()
+    {
+        Debug.Log("died end");
+        FindObjectOfType<DeathScreen>().Open();
+    }
 }

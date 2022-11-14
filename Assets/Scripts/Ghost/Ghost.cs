@@ -25,7 +25,7 @@ public class Ghost : MonoBehaviour
     public bool canKill = false;
     private bool walkStateMove = true;
 
-    public enum MovementState { idle, walk, run, scream }
+    public enum MovementState { idle, walk, run, scream, kill }
     public MovementState state = MovementState.idle;
 
     private void Start()
@@ -52,6 +52,9 @@ public class Ghost : MonoBehaviour
             case MovementState.scream:
                 ScreamState();
                 break;
+            case MovementState.kill:
+                KillState();
+                break;
         }
 
         UpdateAnimationState();
@@ -61,6 +64,11 @@ public class Ghost : MonoBehaviour
     {
         _rb.velocity = Vector2.Lerp(_rb.velocity, _velocity, Time.fixedDeltaTime * 8f);
         // _rb.velocity = _velocity;
+    }
+
+    private void KillState()
+    {
+        _velocity = new Vector2(0, 0);
     }
 
     private void IdleState()
@@ -156,7 +164,9 @@ public class Ghost : MonoBehaviour
     {
         if (canKill && other.tag == "Player")
         {
-            Debug.Log("Die");
+            // Debug.Log("Die");
+            state = MovementState.kill;
+            FindObjectOfType<PlayerController>().DieState();
         }
     }
 
