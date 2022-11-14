@@ -23,4 +23,6 @@ public class GameSave : MonoBehaviour
     public Dictionary<string, bool> level = new Dictionary<string, bool>();
     public Dictionary<string, bool> items = new Dictionary<string, bool>();
 
+    public bool[] day = new bool[7];
+
 }

@@ -25,6 +25,7 @@ public class InteractionItem_103_door : InteractionItemBase
     public override void End()
     {
         gameObject.SetActive(false);
+        GameSave.instance.day[1] = true;
         base.End();
     }
 }
